@@ -21,7 +21,7 @@ module FormsLab
         Ship.new(attributes)
       end
       
-      @ship =Ship.all
+      @ship = Ship.all
       binding.pry 
 
 
