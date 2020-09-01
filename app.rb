@@ -17,8 +17,12 @@ module FormsLab
       
       @pirate = Pirate.new(params)
       
-      params
-        binding.pry
+      params[:pirate][:ships].each do |attributes|
+        Ship.new(attributes)
+      end
+      
+      @ship =Ship.all
+      binding.pry 
         
       end
 
