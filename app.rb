@@ -16,7 +16,11 @@ module FormsLab
     post '/pirates' do
       
       @pirate = Pirate.new(params)
-      binding.pry
+      
+      params.each do |k.v| do
+        binding.pry
+        
+      end
 
 
       erb :'/pirates/show' 
